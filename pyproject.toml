@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hitl-approval-gateway"
+version = "0.1.0"
+description = "Human-in-the-loop (HITL) authorization gateway and policy engine for dangerous AI agent actions"
+authors = [{ name = "Ibrahim Aliyu Saddique", email = "ibraheemaliyu32@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "rich>=13.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
